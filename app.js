@@ -6,7 +6,7 @@ let app = express();
 let moment = require("moment-timezone");
 const bodyParser = require('body-parser');
 const sheetHelper = require("./services/google/google-sheet-helper");
-const DATA_RANGE = process.env.DATA_RANGE;
+const DATA_RANGE = "第34組!A4:B100";
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
